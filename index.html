@@ -11,33 +11,65 @@
     <title>Bootstrap5を試す</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-auto">
+    <nav
+    class="navbar navbar-expand-lg navbar-dark bg-dark">
       <span class="navbar-brand px-5">Hello World!</span>
       <button
       class="navbar-toggler" 
       type="button"
       data-toggle="collapse"
-      data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
       aria-expanded="false"
       aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- 非モバイル用 -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a
+            class="nav-link active"
+            aria-current="page"
+            href="#">
+            <span class="d-lg-none font-weight-bold"> > </span>Home
+            </a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#h1">
+              <span class="d-lg-none font-weight-bold"> > </span>H1
+            </a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Works</a>
+            <a class="nav-link" href="#icons">
+              <span class="d-lg-none font-weight-bold"> > </span>Icons
+            </a>
           </li>
         </ul>
       </div>
     </nav>
-    <h1 class="m-5">My Sandbox.</h1>
+    <header
+    class="mt-5">
+      <div
+      class="mx-auto"
+      style="width:20vw">
+        <img src="icon.png" width="100%"/>
+      </div>
+    </header>
+    <main
+    class="mx-auto"
+    style="width:60vw"
+    >
+      <h1 id="h1">My Sandbox.</h1>
+      <p
+      class="ml-3">Here is my playground!</p>
+      <div id="icons">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-award" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M9.669.864L8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193l-1.51-.229L8 1.126l-1.355.702-1.51.229-.684 1.365-1.086 1.072L3.614 6l-.25 1.506 1.087 1.072.684 1.365 1.51.229L8 10.874l1.356-.702 1.509-.229.684-1.365 1.086-1.072L12.387 6l.248-1.506-1.086-1.072-.684-1.365z"/>
+          <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+        </svg>
+      </div>
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
